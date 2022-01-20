@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "45070384093",
+    "project_id": "lista-pad-rec-firestore",
+    "storage_bucket": "lista-pad-rec-firestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45070384093:android:3037d9cdf71500f4c69434",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.lista_pad_rec_dois"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45070384093-kobubgd5c670c49i4afomhhp16q7m2fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxqpFJy8n3xt5wib1f2XxB9XwdBeKoCsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45070384093-kobubgd5c670c49i4afomhhp16q7m2fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45070384093:android:2383a1ba49905088c69434",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.lista_pad_rec_firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45070384093-kobubgd5c670c49i4afomhhp16q7m2fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxqpFJy8n3xt5wib1f2XxB9XwdBeKoCsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45070384093-kobubgd5c670c49i4afomhhp16q7m2fh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

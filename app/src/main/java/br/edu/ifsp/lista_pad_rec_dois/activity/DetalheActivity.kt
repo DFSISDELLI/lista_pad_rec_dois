@@ -24,7 +24,7 @@ class DetalheActivity : AppCompatActivity() {
 
         contatoID = this.intent.getStringExtra("contatoID") as String
 
-        db.collection("contatos").document(contatoID)
+        db.collection("ListaPad").document(contatoID)
             .addSnapshotListener { value, error ->
                 if (value != null) {
                     val c = value.toObject<Contato>()
@@ -57,7 +57,7 @@ class DetalheActivity : AppCompatActivity() {
 
             val c = Contato(nome, fone, email)
 
-            db.collection("contatos").document(contatoID).set(c)
+            db.collection("ListaPad").document(contatoID).set(c)
 
 
             Toast.makeText(this, "Informações Alteradas", Toast.LENGTH_LONG).show()
@@ -66,7 +66,7 @@ class DetalheActivity : AppCompatActivity() {
 
         if (item.itemId == R.id.action_excluirContato) {
 
-            db.collection("contatos").document().delete()
+            db.collection("ListaPad").document().delete()
             Toast.makeText(this, "Contato Excluído", Toast.LENGTH_LONG).show()
             finish()
         }

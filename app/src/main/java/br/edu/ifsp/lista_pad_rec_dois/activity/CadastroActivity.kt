@@ -35,7 +35,7 @@ class CadastroActivity : AppCompatActivity() {
 
             val c = Contato(nome, fone, email)
             val db = Firebase.firestore
-            db.collection("contatos").add(c)
+            db.collection("ListaPad").add(c)
 
 
             Toast.makeText(this, "Contato Inserido", Toast.LENGTH_LONG).show()

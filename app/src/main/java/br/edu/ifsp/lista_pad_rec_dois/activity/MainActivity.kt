@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI()
     {
         val db = Firebase.firestore
-        val query : Query = db.collection("contatos"). orderBy("nome")
+        val query : Query = db.collection("ListaPad"). orderBy("nome")
         val options: FirestoreRecyclerOptions<Contato> = FirestoreRecyclerOptions.Builder<Contato>()
             .setQuery(query, Contato::class.java).build()
 
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             override fun onQueryTextChange(p0: String?): Boolean {
                 if (p0!="") {
                     contatoAdapter.stopListening()
-                    val query: Query = FirebaseFirestore.getInstance().collection("contatos")
+                    val query: Query = FirebaseFirestore.getInstance().collection("ListaPad")
                         .whereGreaterThanOrEqualTo("nome", p0.toString())
                         .whereLessThanOrEqualTo("nome", p0.toString()+ "\uf8ff")
 
